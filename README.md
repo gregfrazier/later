@@ -1,7 +1,7 @@
 # later
 Raycast (Wolf3d Style) Canvas/Javascript
 
-Simple raycasting with perspective correction, textured walls, floor and ceiling.
+Simple raycasting with perspective correction, textured walls, floor and ceiling. Very crude collision detection, you can walk through the corners of adjacent blocks.
 
 Very slow, probably due to the way I coded it and the limited fillrate of canvas. Really could use some refactoring; like most of my stuff on github, it's a hack job.
 
