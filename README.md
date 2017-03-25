@@ -5,7 +5,9 @@ Simple raycasting with perspective correction, textured walls, floor and ceiling
 
 Very slow, probably due to the way I coded it and the limited fillrate of canvas. Really could use some refactoring; like most of my stuff on github, it's a hack job.
 
-Runs best in Firefox. Chrome and IE11 are doable, just slow. Runs like crud in Edge, something's wrong with the keypresses because there is huge latency.
+Recently modified to use direct pixel access, fake shading/fog, moving clouds (which only read the green bits to make it look overcast). It's faster now, still not speedy. Needs to be reorganized and less hacky.
+
+Works in Firefox, Chrome, IE11. Edge has a keypress bug, so it works, but it's wonky.
 
 ![alt tag](https://raw.githubusercontent.com/gregfrazier/later/master/sample.jpg)
 
