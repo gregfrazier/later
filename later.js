@@ -429,7 +429,7 @@
 						}
 						if(keyboard.sky) {
 							var q = getBitmapPointGrey(2, (sfloorTexX+www) % 128, (sfloorTexY+www) % 128);
-							var idx = (rayNumber + 320 * (200 - y)) * 4;
+							var idx = (rayNumber + 320 * (199 - y)) * 4;
 							var ble = 1 - (currentDist % 30) / 8;
 							setBitmapPoint(SurfaceFloorBufferData, idx, q, ble);
 							//var idxA = (rayNumber + 320 * (200 - (y+1))) * 4;
