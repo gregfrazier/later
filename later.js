@@ -406,18 +406,16 @@
 							floorMapY = block.y;
 						}
 	
-						var cFloorX = (weight * floorMapX + (1 - weight) * player.x),
-						    cFloorY = (weight * floorMapY + (1 - weight) * player.y),
-						    sFloorX = (weight * floorMapX + (1 - weight) * player.x),
-						    sFloorY = (weight * floorMapY + (1 - weight) * player.y),
+						var cFloorX = (weight * floorMapX + (0.8 - weight) * player.x),
+						    cFloorY = (weight * floorMapY + (0.8 - weight) * player.y),
+						    sFloorX = (weight * floorMapX + (0.8 - weight) * player.x),
+						    sFloorY = (weight * floorMapY + (0.8 - weight) * player.y),
 							floorTexX = ((cFloorX * world.textureSize.w) % (world.textureSize.w-1)) | 0,
 							floorTexY = ((cFloorY * world.textureSize.w) % (world.textureSize.w-1)) | 0,
 							sfloorTexX = ((sFloorX * world.textureSize.w) % (world.textureSize.w-1)) | 0,
 							sfloorTexY = ((sFloorY * world.textureSize.w) % (world.textureSize.w-1)) | 0;
 	
 						if(keyboard.floor) {
-							if(floorTexX > 128 || floorTexX < 0)
-								console.log(floorTexX);
 							var q = getBitmapPoint(1, floorTexX, floorTexY);
 							var idx = (rayNumber + 320 * y) * 4;
 							var ble = 1 - (currentDist % 30) / 8;
